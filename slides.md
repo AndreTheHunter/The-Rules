@@ -217,6 +217,16 @@ Good Code should be:
 1. Automated
 
 
+## Links
+<!-- .slide: class="no-fragment" -->
+- These slides  
+https://andrethehunter.github.io/The-Rules/
+- My GitHub  
+https://github.com/AndreTheHunter
+- Work with people who write Good Code  
+https://jesi.io/career/
+
+
 <!-- .slide: class="center" -->
 # Thank You
 

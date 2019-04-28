@@ -16,28 +16,29 @@
             border: 1px solid #eee8d5;
         }
 
-        .reveal section h1 {
+        .reveal .slides section h1 {
             text-shadow: 1px 1px white;
         }
 
-        .reveal section img {
+        .reveal .slides section img {
             border: none;
             box-shadow: none;
             margin: 0;
         }
 
-        .reveal section p {
-            margin: 0;
-        }
 
-        .reveal section figcaption {
+        .reveal .slides section figcaption {
             vertical-align: super;
             font-size: small;
         }
 
-        .reveal section blockquote {
+        .reveal .slides section blockquote {
             text-align: center;
             width: auto;
+            margin: 0;
+        }
+
+        .reveal .slides section blockquote p {
             margin: 0;
         }
     </style>
@@ -75,13 +76,14 @@
       { src: 'reveal.js/plugin/notes/notes.js', async: true },
       { src: 'reveal.js/plugin/highlight/highlight.js', async: true }
     ],
+    fragmentInURL: true,
     hash: true,
     height: 768,
     history: true,
     margin: 0.05,
     width: 1024
   })
-  Reveal.addEventListener('ready', event => document.querySelectorAll('.reveal section li').forEach(ele => ele.classList.add('fragment')))
+  Reveal.addEventListener('ready', event => document.querySelectorAll('.reveal.ready .slides section:not(.stack):not(.no-fragment) li').forEach(ele => ele.classList.add('fragment')))
 </script>
 </body>
 </html>
