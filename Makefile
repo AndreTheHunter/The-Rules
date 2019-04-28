@@ -2,7 +2,7 @@ serve: deps
 	npm start
 
 deps:
+	git submodule update
 	npm install
-	cd reveal.js && npm install
 
 .PHONY: serve deps

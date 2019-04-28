@@ -1,15 +1,15 @@
 {
-  "name": "the-rules-5-coding-principles-that-every-good-programmer-should-follow",
+  "name": "the-rules",
   "author": "André de Jager",
   "version": "1.0.0",
+  "homepage": "https://andrethehunter.github.io/The-Rules/",
   "scripts": {
     "start": "live-server"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AndreTheHunter/The-Rules-5-coding-principles-that-every-good-programmer-should-follow.git"
+    "url": "git+https://github.com/AndreTheHunter/The-Rules.git"
   },
-  "homepage": "https://github.com/AndreTheHunter/The-Rules-5-coding-principles-that-every-good-programmer-should-follow#readme",
   "devDependencies": {
     "live-server": "^1.2.1"
   }
