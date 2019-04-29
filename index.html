@@ -14,6 +14,7 @@
         .reveal .slides {
             /*FIXME remove border once checked on final display*/
             border: 1px solid #eee8d5;
+            font-size: 80px;
         }
 
         .reveal .slides section h1 {
@@ -83,7 +84,9 @@
     margin: 0.05,
     width: 1920
   })
-  Reveal.addEventListener('ready', event => document.querySelectorAll('.reveal.ready .slides section:not(.stack):not(.no-fragment) li').forEach(ele => ele.classList.add('fragment')))
+  const sectionSelector = '.reveal.ready .slides section:not(.stack):not(.no-fragment)'
+  const fragmentSelectors = `${sectionSelector} > ul li, ${sectionSelector} > ol li`
+  Reveal.addEventListener('ready', e => document.querySelectorAll(fragmentSelectors).forEach(ele => ele.classList.add('fragment')))
 </script>
 </body>
 </html>
